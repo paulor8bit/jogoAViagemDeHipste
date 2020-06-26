@@ -5,7 +5,7 @@ class Jogo {
         
     }
     setup() {
-        
+      
         cenario = new Cenario(imagemCenario, 1)
         cenarioUm = new Cenario(imagemCenarioUm,1)
         cenarioDois = new Cenario(imagemCenarioDois, 1)
@@ -32,7 +32,9 @@ class Jogo {
         inimigos.push(inimigo)
         inimigos.push(inimigoGrande)
         inimigos.push(inimigoVoador)
-
+        if (cenaAtual =='jogo') {
+          somDoJogo.loop();
+        }
 
     }
 keyPressed(key) {

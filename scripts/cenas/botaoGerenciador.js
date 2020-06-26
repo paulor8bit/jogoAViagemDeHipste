@@ -17,6 +17,7 @@ class BotaoGerenciador {
     _alteraCena(){
         this.botao.remove()
         cenaAtual ='jogo'
+        somDoJogo.loop();
     }
 }
 
