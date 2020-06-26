@@ -52,18 +52,18 @@ class Personagem extends Animacao{
         if (this.invencivel) { 
             return false
         }
-        const hitBox = .3
+        const hitBox = .7
         //Mostrar campos
         // noFill()
         // rect(this.x, this.y,
-        //     this.largura*hitBox , this.altura )
+        //     this.largura * hitBox, this.altura * hitBox)
         // rect(inimigo.x, inimigo.y,
-        //     inimigo.largura, inimigo.altura)
+        //     inimigo.largura , inimigo.altura )
 
         const colisao = collideRectRect(this.x, this.y,
-            this.largura * hitBox, this.altura, 
+            this.largura * hitBox, this.altura * hitBox, 
             inimigo.x, inimigo.y,
-            inimigo.largura , inimigo.altura )
+            inimigo.largura , inimigo.altura)
             
         return colisao
     }

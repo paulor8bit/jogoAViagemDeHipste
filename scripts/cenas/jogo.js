@@ -32,9 +32,7 @@ class Jogo {
         inimigos.push(inimigo)
         inimigos.push(inimigoGrande)
         inimigos.push(inimigoVoador)
-        if (cenaAtual =='jogo') {
-          somDoJogo.loop();
-        }
+
 
     }
 keyPressed(key) {
