@@ -17,6 +17,8 @@ class TelaInicial {
         text('A Viagem de', width /2, 100)
         textSize(80)
         text('Hipste', width /2, 150)
+        textSize(20);
+        text('Use as setas ou wasd para correr e pular', width / 2, height/ 7*5+100)
     }
     _botao() {
       botaoGerenciador.y = height/7*5;
