@@ -14,7 +14,7 @@ class TelaInicial {
         textFont(fonteTelaInicial)
         textSize(50)
         textAlign(CENTER)
-        text('As aventuras de', width /2, 100)
+        text('A Viagem de', width /2, 100)
         textSize(80)
         text('Hipste', width /2, 150)
     }
