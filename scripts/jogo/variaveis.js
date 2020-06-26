@@ -23,12 +23,14 @@ let pontuacao
 
 let personagem
 let imagemPersonagem
+const larguraPersonagem = 3520
+const alturaPersonagem = 1760
+const matrizPersonagem =  [
+    [0,0], [(larguraPersonagem/4),0], [(larguraPersonagem/4)*2,0], [(larguraPersonagem/4)*3,0],    
+    [0,(alturaPersonagem/4)], [(larguraPersonagem/4),(alturaPersonagem/4)], [(larguraPersonagem/4)*2,(alturaPersonagem/4)], [(larguraPersonagem/4)*3,(alturaPersonagem/4)],
+    [0,(alturaPersonagem/4)*2], [(larguraPersonagem/4),(alturaPersonagem/4)*2], [(larguraPersonagem/4)*2,(alturaPersonagem/4)*2], [(larguraPersonagem/4)*3,(alturaPersonagem/4)*2],
+    [0,(alturaPersonagem/4)*3], [(larguraPersonagem/4),(alturaPersonagem/4)*2], [(larguraPersonagem/4)*2,(alturaPersonagem/4)*3], [(larguraPersonagem/4)*3,(alturaPersonagem/4)*3]]
 
-  const matrizPersonagem =  [
-    [0,0], [880,0], [1760,0], [2640,0],
-    [0,440], [880,440], [1760,440], [2640,440],
-    [0,880], [880,880], [1760,880], [2640,880],
-    [0,1320], [880,1320], [1760,1320], [2640,1320]]
 
 
 //   const matrizPersonagem =  [
@@ -41,10 +43,11 @@ let imagemPersonagem
 let inimigo
 let imagemInimigo
 const matrizInimigo =[
-  [0,0], [104,0],[208,0],[312,0],
-  [0,104],[104,104],[208,104],[312,104],
-  [0,208],[104,208],[208,208],[312,208],
-  [0,312],[104,312],[208,312],[312,312],
+  [0,0],
+  //  [104,0],[208,0],[312,0],
+  // [0,104],[104,104],[208,104],[312,104],
+  // [0,208],[104,208],[208,208],[312,208],
+  // [0,312],[104,312],[208,312],[312,312],
 //   [0,418],[104,418],[208,418],[312,418],
 //   [0,522],[104,522],[208,522],[312,522],
 //   [0,626],[104,626],[208,626],[312,626]
@@ -52,23 +55,23 @@ const matrizInimigo =[
   
 let inimigoGrande
 let imagemInimigoGrande
+const larguraSpriteInimigoGrande = 6144
+const alturaSpriteInimigoGrande = 6144
 const matrizInimigoGrande = [
-  [0,0], [400,0], [800,0], [1200,0], [1600,0],
-  [0,400], [400,400], [800,400], [1200, 400], [1600, 400],
-  [0,800], [400, 800], [800, 800], [1200, 800], [1600, 800],
-  [0, 1200], [400, 1200], [800, 1200], [1200, 1200], [1600, 1200], 
-  [0, 1600], [400, 1600], [800, 1600], [1200, 1600], [1600, 1600],
-  [0, 2000], [400, 2000], [800, 2000]]
+  [0,0], [(larguraSpriteInimigoGrande/4),0], [(larguraSpriteInimigoGrande/4)*2,0], [(larguraSpriteInimigoGrande/4)*3,0],    
+  [0,(alturaSpriteInimigoGrande/4)], [(larguraSpriteInimigoGrande/4),(alturaSpriteInimigoGrande/4)], [(larguraSpriteInimigoGrande/4)*2,(alturaSpriteInimigoGrande/4)], [(larguraSpriteInimigoGrande/4)*3,(alturaSpriteInimigoGrande/4)],
+  [0,(alturaSpriteInimigoGrande/4)*2], [(larguraSpriteInimigoGrande/4),(alturaSpriteInimigoGrande/4)*2], [(larguraSpriteInimigoGrande/4)*2,(alturaSpriteInimigoGrande/4)*2], [(larguraSpriteInimigoGrande/4)*3,(alturaSpriteInimigoGrande/4)*2],
+  [0,(alturaSpriteInimigoGrande/4)*3], [(larguraSpriteInimigoGrande/4),(alturaSpriteInimigoGrande/4)*2], [(larguraSpriteInimigoGrande/4)*2,(alturaSpriteInimigoGrande/4)*3], [(larguraSpriteInimigoGrande/4)*3,(alturaSpriteInimigoGrande/4)*3]]
 
 let inimigoVoador
 let imagemInimigoVoador
+const larguraSpriteInimigoVoador = 2340
+const alturaSpriteInimigoVoador = 2298
 const matrizInimigoVoador = [
-  [0,0], [200, 0], [400, 0],
-  [0, 150], [200, 150], [400, 150],
-  [0, 300], [200, 300], [400, 300],
-  [0, 450], [200, 450], [400, 450],
-  [0, 600], [200, 600], [400, 600],
-  [0, 750]]
+  [0,0], [(larguraSpriteInimigoVoador/4),0], [(larguraSpriteInimigoVoador/4)*2,0], [(larguraSpriteInimigoVoador/4)*3,0],    
+  [0,(alturaSpriteInimigoVoador/4)*2], [(larguraSpriteInimigoVoador/4),(alturaSpriteInimigoVoador/4)*2], [(larguraSpriteInimigoVoador/4)*2,(alturaSpriteInimigoVoador/4)*2], [(larguraSpriteInimigoVoador/4)*3,880],
+  
+]
 
 const inimigos = []
 

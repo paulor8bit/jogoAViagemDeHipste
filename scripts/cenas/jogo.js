@@ -15,17 +15,19 @@ class Jogo {
         vida = new Vida(fita.configuracoes.vidaMaxima, fita.configuracoes.vidaInicial)
       
         personagem = new Personagem(matrizPersonagem, imagemPersonagem,
-            50, 30, 110, 135, 880, 440)
+            50, 30, 110, 135, (larguraPersonagem/4), (alturaPersonagem/4))
             // 0, 30, 110, 135, 220, 270)        
        
         const inimigo = new Inimigo(matrizInimigo, imagemInimigo, width-52,
-        30, 52, 52, 104, 104, 10)
+        30, 80, 80, 500, 500, 10)
+        // const inimigo = new Inimigo(matrizInimigo, imagemInimigo, width-52,
+        //   30, 52, 52, 104, 104, 10)
         
         const inimigoGrande = new Inimigo(matrizInimigoGrande, imagemInimigoGrande, width-52,
-        0, 200, 200, 400, 400, 10)
+        30, 200, 200, (larguraSpriteInimigoGrande/4), (alturaSpriteInimigoGrande/4), 10)
         
         const inimigoVoador = new Inimigo(matrizInimigoVoador, imagemInimigoVoador, width-52,
-        200, 100, 75, 200, 150, 10)
+        200, 100, 75, (larguraSpriteInimigoVoador/4),(alturaSpriteInimigoVoador/2), 10)
       
         inimigos.push(inimigo)
         inimigos.push(inimigoGrande)
@@ -101,10 +103,11 @@ draw() {
       personagem.ficaInvencivel()
       
       if(vida.vidas === 0) {
-        noLoop()
+        // noLoop()
         // somGameOver.play()
         image(imagemGameOver, ( width / 2 ) - 206, ( height / 2 ) - 39, 412, 78);
         somDoJogo.stop()  
+        personagem.remove()
       }
     }
 }
