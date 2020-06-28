@@ -16,11 +16,13 @@ function preload() {
     imagemInimigo = loadImage('imagens/inimigos/gotinha.png')
     imagemInimigoGrande = loadImage('imagens/inimigos/troll.png')
     imagemInimigoVoador = loadImage('imagens/inimigos/gotinhavoadora.png')
+    imagemMorty = loadImage('imagens/inimigos/morty.png')
     
     
     
     somDoJogo = loadSound('sons/atack.mp3')
     somDoPulo = loadSound('sons/somPulo.mp3')
+    somWoof = loadSound('sons/woof.mp3  ')
     // somGameOver = loadSound('sons/game-over-sound-effect.mp3');
     
 

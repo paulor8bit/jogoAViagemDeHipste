@@ -10,13 +10,14 @@ let imagemCenario
 let imagemCenarioUm // Cenario com Paralax
 let imagemCenarioDois
 let imagemCenarioTres
-let imagemCenarioQuatro
+let imagemCenarioQuatro 
 let cenarioUm
 let cenarioDois
 let cenarioTres
 let cenarioQuatro
+let inimigofun
 
-
+let gameOver = false
 let vida
 let imagemVida
 let pontuacao
@@ -55,8 +56,8 @@ const matrizInimigo =[
   
 let inimigoGrande
 let imagemInimigoGrande
-const larguraSpriteInimigoGrande = 6144
-const alturaSpriteInimigoGrande = 6144
+const larguraSpriteInimigoGrande = 1848
+const alturaSpriteInimigoGrande = 2040
 const matrizInimigoGrande = [
   [0,0], [(larguraSpriteInimigoGrande/4),0], [(larguraSpriteInimigoGrande/4)*2,0], [(larguraSpriteInimigoGrande/4)*3,0],    
   [0,(alturaSpriteInimigoGrande/4)], [(larguraSpriteInimigoGrande/4),(alturaSpriteInimigoGrande/4)], [(larguraSpriteInimigoGrande/4)*2,(alturaSpriteInimigoGrande/4)], [(larguraSpriteInimigoGrande/4)*3,(alturaSpriteInimigoGrande/4)],
@@ -73,10 +74,22 @@ const matrizInimigoVoador = [
   
 ]
 
+let morty
+let imagemMorty
+const larguraSpriteMorty = 3120
+const alturaSpriteMorty = 4680
+const matrizMorty =  [
+  [0,0], [(larguraSpriteMorty /4),0], [(larguraSpriteMorty /4)*2,0], [(larguraSpriteMorty /4)*3,0],    
+  [0,(alturaSpriteMorty/4)], [(larguraSpriteMorty /4),(alturaSpriteMorty/4)], [(larguraSpriteMorty /4)*2,(alturaSpriteMorty/4)], [(larguraSpriteMorty /4)*3,(alturaSpriteMorty/4)],
+  [0,(alturaSpriteMorty/4)*2], [(larguraSpriteMorty /4),(alturaSpriteMorty/4)*2], [(larguraSpriteMorty /4)*2,(alturaSpriteMorty/4)*2], [(larguraSpriteMorty /4)*3,(alturaSpriteMorty/4)*2],
+  [0,(alturaSpriteMorty/4)*3], [(larguraSpriteMorty /4),(alturaSpriteMorty/4)*2], [(larguraSpriteMorty /4)*2,(alturaSpriteMorty/4)*3], [(larguraSpriteMorty /4)*3,(alturaSpriteMorty/4)*3]]
+
+
 const inimigos = []
 
 let somDoPulo
 let somDoJogo
+let somWoof
 
 let botaoGerenciador
 
