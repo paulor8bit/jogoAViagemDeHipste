@@ -18,6 +18,8 @@ function preload() {
     imagemInimigoVoador = loadImage('imagens/inimigos/gotinhavoadora.png')
     imagemMorty = loadImage('imagens/inimigos/morty.png')
     imagemDuck = loadImage('imagens/inimigos/duck.png')
+    imagemSonic = loadImage('imagens/inimigos/sonic.png')
+    imagemLuigi = loadImage('imagens/inimigos/luigi.png')
     
     
     

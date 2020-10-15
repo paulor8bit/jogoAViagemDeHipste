@@ -96,6 +96,26 @@ const matrizDuck = [
   [0,(alturaSpriteDuck/4)*2], [(larguraSpriteDuck /4),(alturaSpriteDuck/4)*2], [(larguraSpriteDuck /4)*2,(alturaSpriteDuck/4)*2], [(larguraSpriteDuck /4)*3,(alturaSpriteDuck/4)*2],
   [0,(alturaSpriteDuck/4)*3], [(larguraSpriteDuck /4),(alturaSpriteDuck/4)*2], [(larguraSpriteDuck /4)*2,(alturaSpriteDuck/4)*3], [(larguraSpriteDuck /4)*3,(alturaSpriteDuck/4)*3]]
 
+let sonic
+let imagemSonic
+const larguraSpriteSonic = 1000
+const alturaSpriteSonic = 700
+const matrizSonic = [
+  [0,0], [(larguraSpriteSonic/4),0], [(larguraSpriteSonic/4)*2,0], [(larguraSpriteSonic/4)*3,0],    
+  [0,(alturaSpriteSonic/4)*2], [(larguraSpriteSonic/4),(alturaSpriteSonic/4)*2], [(larguraSpriteSonic/4)*2,(alturaSpriteSonic/4)*2], [(larguraSpriteSonic/4)*3,880],
+  
+]
+
+let luigi
+let imagemLuigi
+const larguraSpriteLuigi = 1000
+const alturaSpriteLuigi = 1938
+const matrizLuigi = [
+  [0,0], [(larguraSpriteLuigi/4),0], [(larguraSpriteLuigi/4)*2,0], [(larguraSpriteLuigi/4)*3,0],    
+  [0,(alturaSpriteLuigi/4)*2], [(larguraSpriteLuigi/4),(alturaSpriteLuigi/4)*2], [(larguraSpriteLuigi/4)*2,(alturaSpriteLuigi/4)*2], [(larguraSpriteLuigi/4)*3,880],
+  
+]
+
 
 const inimigos = []
 

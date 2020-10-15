@@ -34,12 +34,22 @@ class Jogo {
 
       const duck = new Inimigo(matrizDuck, imagemDuck, width-52,
       30, 100, 150, (larguraSpriteDuck/4), (alturaSpriteDuck/4), 10)
+
+      const sonic = new Inimigo(matrizSonic, imagemSonic, width-52,
+        30, 100, 150, (larguraSpriteSonic/4), (alturaSpriteSonic/4), 10)
+
+      const luigi = new Inimigo(matrizLuigi, imagemLuigi, width-52,
+      30, 100, 150, (larguraSpriteLuigi/4), (alturaSpriteLuigi/4), 10)
+      
       
       inimigos.push(inimigo)
       inimigos.push(inimigoGrande)
       inimigos.push(inimigoVoador)
       inimigos.push(morty)
       inimigos.push(duck)
+      inimigos.push(sonic)
+      inimigos.push(luigi)
+
     
   }
 keyPressed(key) {
