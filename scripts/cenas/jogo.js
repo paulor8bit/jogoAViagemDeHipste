@@ -31,11 +31,15 @@ class Jogo {
       
       const inimigoVoador = new Inimigo(matrizInimigoVoador, imagemInimigoVoador, width-52,
       200, 100, 75, (larguraSpriteInimigoVoador/4),(alturaSpriteInimigoVoador/2), 10)
+
+      const duck = new Inimigo(matrizDuck, imagemDuck, width-52,
+      30, 100, 150, (larguraSpriteDuck/4), (alturaSpriteDuck/4), 10)
       
       inimigos.push(inimigo)
       inimigos.push(inimigoGrande)
       inimigos.push(inimigoVoador)
       inimigos.push(morty)
+      inimigos.push(duck)
     
   }
 keyPressed(key) {

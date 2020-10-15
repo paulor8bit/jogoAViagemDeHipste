@@ -85,6 +85,18 @@ const matrizMorty =  [
   [0,(alturaSpriteMorty/4)*3], [(larguraSpriteMorty /4),(alturaSpriteMorty/4)*2], [(larguraSpriteMorty /4)*2,(alturaSpriteMorty/4)*3], [(larguraSpriteMorty /4)*3,(alturaSpriteMorty/4)*3]]
 
 
+
+let duck
+let imagemDuck
+const larguraSpriteDuck = 880
+const alturaSpriteDuck = 880
+const matrizDuck = [
+  [0,0], [(larguraSpriteDuck /4),0], [(larguraSpriteDuck /4)*2,0], [(larguraSpriteDuck /4)*3,0],    
+  [0,(alturaSpriteDuck/4)], [(larguraSpriteDuck /4),(alturaSpriteDuck/4)], [(larguraSpriteDuck /4)*2,(alturaSpriteDuck/4)], [(larguraSpriteDuck /4)*3,(alturaSpriteDuck/4)],
+  [0,(alturaSpriteDuck/4)*2], [(larguraSpriteDuck /4),(alturaSpriteDuck/4)*2], [(larguraSpriteDuck /4)*2,(alturaSpriteDuck/4)*2], [(larguraSpriteDuck /4)*3,(alturaSpriteDuck/4)*2],
+  [0,(alturaSpriteDuck/4)*3], [(larguraSpriteDuck /4),(alturaSpriteDuck/4)*2], [(larguraSpriteDuck /4)*2,(alturaSpriteDuck/4)*3], [(larguraSpriteDuck /4)*3,(alturaSpriteDuck/4)*3]]
+
+
 const inimigos = []
 
 let somDoPulo
